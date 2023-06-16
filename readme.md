@@ -2,6 +2,13 @@
 
 This is a demonstration of the MVP repo for handoff.
 
+### Quick Start
+1. Run `npm install`
+2. Run `npm run fetch`
+3. Answer the prompts
+
+
+### Details
 Handoff can be used either via the cli -
 
 ```
