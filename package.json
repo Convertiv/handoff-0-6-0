@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "5.2.*",
     "handoff-app": "git://github.com/Convertiv/handoff-app.git#experimental/restructure"
   }
 }
