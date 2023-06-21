@@ -5,14 +5,12 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "handoff-app build",
-    "start": "handoff-app start",
+    "build": "handoff-app build:app",
     "fetch": "handoff-app fetch"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "5.2.*",
     "handoff-app": "git://github.com/Convertiv/handoff-app.git#experimental/restructure"
   }
 }
