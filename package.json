@@ -3,15 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "build": "handoff-app build",
     "start": "handoff-app start",
     "fetch": "handoff-app fetch"
   },
-  "type": "module",
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "handoff-app": "git://github.com/Convertiv/handoff-app.git#experimental/restructure"
+    "autoprefixer": "^10.4.14",
+    "handoff-app": "git://github.com/Convertiv/handoff-app.git#experimental/restructure",
+    "tailwindcss": "^3.3.2"
   }
 }
