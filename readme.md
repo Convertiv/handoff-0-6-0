@@ -1,12 +1,19 @@
 # Handoff 0.6.0 POC Repo
 
-This is a demonstration of the MVP repo for handoff.
+This is a demonstration of the 0.6.0 code for handoff.
 
 ### Quick Start
 1. Run `npm install`
 2. Run `npm run fetch`
 3. Answer the prompts
 
+### Integration
+This repo is set up to allow easy testing of integration with Bootstrap 5.3 or
+Tailwind 3.3.  The tailwind integration is not production ready yet, but this
+repo allows you to test both.  
+
+To test bootstrap, run `node bootstrap.js`.
+To test tailwind, run `node tailwind.js`.
 
 ### Details
 Handoff can be used either via the cli -
