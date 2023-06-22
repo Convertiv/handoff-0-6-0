@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "handoff-app build:app",
+    "start": "handoff-app start",
     "fetch": "handoff-app fetch"
   },
   "author": "",
