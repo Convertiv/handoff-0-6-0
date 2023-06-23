@@ -7,17 +7,12 @@ import Handoff from "handoff-app";
       title: "Handoff Bootstrap",
       integration: {
         name: "bootstrap",
-        version: "5.3",
-      },
-    });
-    
-    handoff.configureExportables((exportables) => {
-      exportables.push("components/badge");
-      return exportables;
+        version: "5.3"
+      }
     });
     await handoff.fetch();
-    await handoff.build();
-
+    await handoff.start();
+    
     process.exit(0);
   } catch (e) {
     console.log(e);
