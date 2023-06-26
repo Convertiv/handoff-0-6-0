@@ -1,9 +1,11 @@
 # Handoff 0.6.0 POC Repo
 
-This is a demonstration of the 0.6.0 code for handoff.
+This is a demonstration of the 0.6.0 code for handoff. Its written in typescript
+to make it easier for you to use the handoff typings to build and manage the code
 
 ### Quick Start
 1. Run `npm install`
+1. Run `npm run build`
 2. Run `npm run fetch`
 3. Answer the prompts
 
@@ -12,8 +14,8 @@ This repo is set up to allow easy testing of integration with Bootstrap 5.3 or
 Tailwind 3.3.  The tailwind integration is not production ready yet, but this
 repo allows you to test both.  
 
-To test bootstrap, run `node bootstrap.js`.
-To test tailwind, run `node tailwind.js`.
+To test bootstrap, run `npm run start:bootstrap`.
+To test tailwind, run `npm run start:tailwind`.
 
 ### Details
 Handoff can be used either via the cli -
@@ -33,7 +35,7 @@ Then you can include it as normal -
 
 ```
 import Handoff from "handoff-app";
-const handoff = new Handoff['default']({
+const handoff = new Handoff({
     title: "Handoff Custom"
 });
 await handoff.init();
