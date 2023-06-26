@@ -2,12 +2,14 @@
   "name": "handoff-scratchpad",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "type": "module",
+  "main": "index.ts",
   "scripts": {
-    "build": "handoff-app build:app",
-    "start": "handoff-app start",
-    "fetch": "handoff-app fetch"
+    "build": "tsc",
+    "fetch": "handoff-app fetch",
+    "start:bootstrap": "node dist/start.js bootstrap",
+    "start:tailwind": "node dist/start.js tailwind",
+    "build:bootstrap": "node dist/index.js bootstrap",
+    "build:tailwind": "node dist/index.js tailwind"
   },
   "author": "",
   "license": "ISC",

@@ -3,14 +3,22 @@ import Handoff from "handoff-app";
 // To use the hook, uncomment this
 (async function () {
   try {
-    const handoff = new Handoff.default({
+    const integration = {
+      name: "tailwind",
+      version: "3.3",
+    };
+    if (process.argv.includes("bootstrap")) {
+      integration.name = "bootstrap";
+      integration.version = "5.3";
+    }
+    console.log(
+      `Running Handoff fetch and build for ${integration.name} ${integration.version}`
+    );
+    const handoff = new Handoff({
       title: "Handoff Bootstrap",
-      integration: {
-        name: "bootstrap",
-        version: "5.3",
-      },
+      integration,
     });
-    
+
     handoff.configureExportables((exportables) => {
       exportables.push("components/badge");
       return exportables;
