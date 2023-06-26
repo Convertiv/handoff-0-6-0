@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import Handoff from "handoff-app";
 
 // To use the hook, uncomment this
@@ -25,8 +26,6 @@ import Handoff from "handoff-app";
     });
     await handoff.fetch();
     await handoff.start();
-
-    process.exit(0);
   } catch (e) {
     console.log(e);
     process.exit(0);
