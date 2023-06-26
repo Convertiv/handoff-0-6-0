@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc",
     "fetch": "handoff-app fetch",
+    "start": "handoff-app start",
     "start:bootstrap": "node dist/start.js bootstrap",
     "start:tailwind": "node dist/start.js tailwind",
     "build:bootstrap": "node dist/index.js bootstrap",
