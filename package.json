@@ -15,5 +15,8 @@
   "license": "ISC",
   "dependencies": {
     "handoff-app": "git://github.com/Convertiv/handoff-app.git#CONVHAND-267-handoff-restructure"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.3"
   }
 }
